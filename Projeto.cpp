@@ -9,10 +9,27 @@ struct produto{
 	char tipo[70];
 	float quantidade;
 };
+struct produto produtoLoucos[10];
+void cadastroproduto(int cadastro){
+
+	printf("Entre com o nome ");
+	gets(produtoLoucos[cadastro].nome);
+	printf("Entre com Tipo ");
+	scanf("%s",&produtoLoucos[cadastro].tipo);
+	printf("Entre com a quantidade ");
+	scanf("%f",&produtoLoucos[cadastro].quantidade);
+	
+}
 
 int main(){
-    setlocale(LC_ALL,"portuguese");
-	printf("bem vindo a nossa loja de relógios, para continuar efetue login \n");	
+    int opcao;
+	setlocale(LC_ALL,"portuguese");
+	printf("bem vindo a nossa loja de relógios, para continuar efetue login \n" );	
+	printf("Deseja listar produto ou cadastrar produto? ");
+	scanf("%c",&opcao);
+	if (opcao == 1){
+		
+	
 	struct produto produtoLoucos[10] = {
 		{"1- Rolex", "Relógio de pulso", 200.00          },
 		{"2- Relogio Digital", "Relogio De Mesa", 100    },
@@ -28,5 +45,10 @@ for(linha=0;linha<5;linha++){
 		printf("%s, %s, %f", produtoLoucos[linha].nome,produtoLoucos[linha].tipo,produtoLoucos[linha].quantidade);
 
 		printf("\n");
+	}
+
+		
+	}else {
+		cadastroproduto(7);
 	}
 }
