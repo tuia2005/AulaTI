@@ -20,9 +20,10 @@ int main(){
 	    {"6- Hamburger", "carne", 100},
 	};
 
+printf("Relógio | Tipo | Preço");
 for(linha=0;linha<5;linha++){
 	
 		printf("%s, %s, %d", produtoLoucos[linha].nome,produtoLoucos[linha].tipo,produtoLoucos[linha].quantidade);
-		verificarBaixoEstoque(produtoLoucos[linha].quantidade);
+
 		printf("\n");
 	}
