@@ -13,11 +13,11 @@ int main(){
 	
 	struct produto produtoLoucos[10] = {
 		{"1- Rolex", "Relógio de pulço", 200,00},
-		{"2- Café", "bebida", 100    },
-	    {"3- Oreo", "bolacha", 100   },
-	    {"4- Leite", "bebida", 100   },
-	 	{"5- Frango", "carne", 100   },
-	    {"6- Hamburger", "carne", 100},
+		{"2- Relogio Digital", "Relogio De Mesa", 100    },
+	    {"3- Despertador", "Despertador", 100   },
+	    {"4- Relogio De Parede", "Relogio De Parede", 100   },
+	 	{"5- Cronometro", "Cronometro", 100   },
+	    {"6- Relogio De Sol", "Relogio De Sol", 100},
 	};
 
 for(linha=0;linha<5;linha++){
